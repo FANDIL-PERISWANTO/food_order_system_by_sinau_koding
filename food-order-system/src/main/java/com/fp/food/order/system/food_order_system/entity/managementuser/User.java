@@ -18,13 +18,13 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Entity
 @Table(name = "m_users", indexes = {
-        @Index(name = "idx_user_created_date", columnList = "createdDate"),
-        @Index(name = "idx_user_modified_date", columnList = "modifiedDate"),
-        @Index(name = "idx_user_username", columnList = "username"),
-        @Index(name = "idx_user_email", columnList = "email"),
-        @Index(name = "idx_user_status", columnList = "status"),
-        @Index(name = "idx_user_role", columnList = "role"),
-        @Index(name = "idx_user_alamat", columnList = "alamat")
+        @Index(name = "idx_users_created_date", columnList = "createdDate"),
+        @Index(name = "idx_users_modified_date", columnList = "modifiedDate"),
+        @Index(name = "idx_users_username", columnList = "username"),
+        @Index(name = "idx_users_email", columnList = "email"),
+        @Index(name = "idx_users_status", columnList = "status"),
+        @Index(name = "idx_users_role", columnList = "role"),
+        @Index(name = "idx_users_alamat", columnList = "alamat")
 })
 public class User extends BaseEntity {
 
